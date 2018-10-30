@@ -14,10 +14,6 @@ import java.util.List;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-
-/**
- * Created by Mr.Wan on 2016/3/18.
- */
 public class CatalogService {
 
     private CategoryDAO categoryDAO;
@@ -30,7 +26,6 @@ public class CatalogService {
         itemDAO = new ItemDAOImpl();
     }
 	
-	// Added for Compliance check test
 	public Jedis redisConnection() {
                              GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
                              Jedis poolresource = null;

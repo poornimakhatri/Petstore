@@ -1,5 +1,3 @@
-package org.mypetstore.service;
-
 import org.mypetstore.domain.Item;
 import org.mypetstore.domain.LineItem;
 import org.mypetstore.domain.Order;
@@ -18,9 +16,6 @@ import java.util.List;
 import java.util.Map;
 import org.springframework.stereotype.Controller;
 
-/**
- * Created by Mr.Wan on 2016/3/20.
- */
  @Controller
 public class OrderService {
 

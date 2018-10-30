@@ -4,10 +4,6 @@ import org.mypetstore.domain.Account;
 import org.mypetstore.persistence.AccountDAO;
 import org.mypetstore.persistence.impl.AccountDAOImpl;
 
-
-/**
- * Created by Mr.Wan on 2016/3/20.
- */
 public class AccountService {
 
     private AccountDAO accountDAO;

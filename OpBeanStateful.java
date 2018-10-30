@@ -1,5 +1,3 @@
-package sb;
-
 import java.rmi.RemoteException;
 import javax.ejb.EJBException;
 import javax.ejb.EJBObject;

@@ -1,5 +1,3 @@
-package bmpapp;
- 
 import java.util.*;
 import java.rmi.*;
 import java.sql.*;

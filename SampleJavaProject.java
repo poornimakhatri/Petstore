@@ -1,5 +1,3 @@
-package sample.java.project;
-
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
@@ -13,10 +11,6 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import net.spy.memcached.MemcachedClient;
 
-/**
- * The main class of the application. It contains the main() method,
- * the first method called.
- */
 @NoArgsConstructor
 @AllArgsConstructor
 public class SampleJavaProject implements Runnable {

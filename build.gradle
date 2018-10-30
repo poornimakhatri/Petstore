@@ -1,0 +1,35 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.+'
+}
+
+test {
+    afterTest { desc, result -> 
+        if (result.resultType == TestResult.ResultType.FAILURE) {
+            logger.error "${result.resultType}: ${desc.className}#${desc.name}: ${result.exception.message}"
+        }
+    }
+
+    onOutput { desc, event ->
+        event.message.eachLine {
+            logger.lifecycle "${desc.className}#${desc.name}: ${it}"
+        }
+    }
+}
+
+tasks.withType(Compile).all {
+    options.debug = true
+    options.compilerArgs = ['-Xlint:all']
+}
+
+task createProject << {
+    sourceSets.all {
+        allSource.srcDirs*.mkdirs()
+    }
+    project.properties.webAppDir?.mkdirs()
+}
