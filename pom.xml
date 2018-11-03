@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.twelvefactor</groupId>
-	<artifactId>twelvefactorUI</artifactId>
+	<groupId>com.factor</groupId>
+	<artifactId>factorUI</artifactId>
 	<packaging>jar</packaging>
 
-	<name>TwelveFactorUI</name>
-	<description>Twelve_Factor_compliance_Tool</description>
+	<name>FactorUI</name>
+	<description>Factor_Tool</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
